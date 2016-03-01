@@ -80,10 +80,10 @@ var CENTRAL=['UC 17','UC 18','UC 19','UC 20'];
         else if (nic==="")
         {
             
-             alert("nic must be filled out"+"Confirm pass"+confirmpass);
+             alert("nic must be filled out"+"Confirm pass");
              return  false;
         }
-        else if (password===confirmpass)
+        else if (uc==="")
         {
             
              alert("Password Did Not Macth");
