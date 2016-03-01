@@ -9,6 +9,7 @@
 <html>
 
 <head>
+    
 
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
@@ -16,7 +17,7 @@
 
 <link href="../css training/my website/style.css" rel="stylesheet" type="text/css">
 
-<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+ <script src="script.js" type="text/javascript"></script>
 
 <link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
 
@@ -45,7 +46,7 @@
   <tr>
 	<ul id="MenuBar1" class="MenuBarHorizontal" align="center">
 	<td>
-    <a href="register.html">REGISTRATION</a>
+    <a href="register.jsp">REGISTRATION</a>
 	</td>
 	<td>
     <a href="Home.jsp" class="MenuBarItemSubmenu">COMPLAIN</a>
@@ -59,7 +60,7 @@
   
   </tr>
   </table>
-  <form method="post" action="">
+    <form method="post" name="register" onsubmit="ValidateRegistration()">
   <table align="center" border="5" cellspacing="3" cellpadding="3" width="80%">
 	
 	<tr>
@@ -73,20 +74,20 @@
 	<td>
 	<h2>
 	SELECT YOUR ZONE:
-	<select>
-		<option>
+        <select id = "chose" name="dis" onchange="getVal()">
+            <option value="East">
 		East
 		</option>
-		<option>
+                <option value ="West" name="west" onclick="AsignUC(this.value)">
 		West
 		</option>
-		<option>
+		<option value ="North" name="north" onclick="AsignUC(this.value)">
 		North
 		</option>
-		<option>
+		<option value ="South" name="south" onclick="AsignUC(this.value)">
 		South
 		</option>
-		<option>
+		<option value ="Central" name="central" onclick="AsignUC(this.value)">
 		Central
 		</option>
 	</select>
@@ -95,8 +96,8 @@
 	<tr>
 		<td>
 		<h2>
-			ENTER YOUR UC NUMBER:
-			<select>
+			SELECT YOUR UC NUMBER:
+			<select id = "choseUC" name ="uc">
 		<option>
 		UC 1
 		</option>
