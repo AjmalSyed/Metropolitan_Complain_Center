@@ -132,6 +132,11 @@
 	</td>
 	</tr>
 	<tr>
+	<td>
+	<h2>ENTER YOUR EMAIL:<input type="email" name="email" size="100"></h2>
+	</td>
+	</tr>
+	<tr>
 		<td>
 		<h2>Upload your Picture:</h2><input type="file" name="picture">
 		</td>
