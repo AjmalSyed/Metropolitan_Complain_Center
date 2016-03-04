@@ -60,7 +60,7 @@
   
   </tr>
   </table>
-    <form method="post" name="register" onsubmit="return ValidateRegistration()">
+    <form method="post" name="register" onsubmit="return ValidateRegistration()" action="process.jsp">
   <table align="center" border="5" cellspacing="3" cellpadding="3" width="80%">
 	
 	<tr>

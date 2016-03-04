@@ -60,7 +60,7 @@
   
   </tr>
   </table>
-    <form method="post" name="register" onsubmit="return ValidateRegistration()">
+    <form method="post" name="register" onsubmit="return ValidateRegistration()" action="process.jsp">
   <table align="center" border="5" cellspacing="3" cellpadding="3" width="80%">
 	
 	<tr>
@@ -129,6 +129,11 @@
 	<h2>
 	ENTER YOUR CNIC NUMBER:<input type="text" name="cnic" SIZE="100">
 	</h2>
+	</td>
+	</tr>
+	<tr>
+	<td>
+	<h2>ENTER YOUR EMAIL:<input type="email" name="email" size="100"></h2>
 	</td>
 	</tr>
 	<tr>
