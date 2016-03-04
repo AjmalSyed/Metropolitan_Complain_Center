@@ -127,7 +127,7 @@
 	<tr>
 	<td>
 	<h2>
-	ENTER YOUR CNIC NUMBER:<input type="text" name="cnic" SIZE="100">
+	ENTER YOUR CNIC NUMBER:<input type="text" name="cnic" SIZE="20">
 	</h2>
 	</td>
 	</tr>

@@ -6,7 +6,9 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
+
 <!DOCTYPE html> 
+
 <html>
 
 <head>
@@ -31,6 +33,7 @@
 	
 	
 	<link rel="stylesheet" href="style.css">
+        <script src="Complainscript.js" type="text/javascript"></script>
 	
 	</head>
 
@@ -60,12 +63,25 @@
   
   </tr>
   </table>
-  <form method="post" action="">
+    <form method="post" name ="complain" onsubmit="return  ValidateNIC()" action="process.jsp">
   <table align="center" border="5" cellspacing="3" cellpadding="3" width="80%">
 	<tr>
 	<td>
 	<h2>
-	ENTER YOUR CNIC NUMBER:<input type="text" name="cnic" SIZE="100">
+	ENTER YOUR CNIC NUMBER:<input type="text" name="nic" SIZE="20">
+        <input type="submit" name="check" SIZE="20" value="check">
+        <%
+            if(session.getAttribute("message")==null)
+            {
+              out.print("");
+            }
+            else
+            {
+            out.print(session.getAttribute("message"));
+            session.invalidate(); 
+            }
+ 
+        %>
 	</h2>
 	</td>
 	</tr>

@@ -6,6 +6,7 @@
 Connection con;
 java.sql.Statement statement;
 ResultSet rs;
+boolean valid=false;
 
 public Connection connection() throws Exception
 {
@@ -45,6 +46,28 @@ return con;
             
         }
     }
+ public void validate(String nic)
+ {
+  
+     try {
+            con=connection();
+            statement=con.createStatement();
+            String insert="select *from registratin where nic='"+nic+"'";
+            rs=statement.executeQuery(insert);
+            while(rs.next())
+            {
+                if(nic.equalsIgnoreCase(rs.getString("nic")))
+                {
+                 valid=true;
+                 break;
+                }
+                
+            }
+     }catch (Exception e) {
+              
+        }
+ 
+ }
  public void setUC(String nic,String uc)
  {
  
@@ -83,10 +106,39 @@ return con;
         <%String email=request.getParameter("email");%>
         <%String uc=request.getParameter("uc"); %>
         <%String distric=request.getParameter("dis");%>
-        <%insert_into_registration(name,nic,address,email);%>
-        <%setUC(nic,uc);%>
-        <%insert_into_District(nic, distric, uc);%>
-        <%out.print(name+" "+nic+""+address+" "+email+" "+uc+" "+distric);%>
+        
+        <%if(request.getParameter("check")!=null)
+        {
+         
+          session.setAttribute("message","valid NIC" );
+          String nicComplain=request.getParameter("nic");
+          validate(nicComplain);
+          if(valid==true)
+          {
+              session.setAttribute("message","Valid Nic Number");
+              valid=false;
+          request.getRequestDispatcher("/Home.jsp").forward(request, response);
+          }
+          else
+          {
+              session.setAttribute("message","InValid Nic Number");
+           request.getRequestDispatcher("/Home.jsp").forward(request, response);
+          }
+          request.getRequestDispatcher("/Home.jsp").forward(request, response);
+
+        }
+        else 
+        {
+        insert_into_registration(name,nic,address,email);
+        setUC(nic,uc);
+        insert_into_District(nic, distric, uc);
+        out.print(name+" "+nic+""+address+" "+email+" "+uc+" "+distric);
+        
+        } 
+        %>
+        
+        
+        
         
     </body>
 </html>
