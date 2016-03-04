@@ -63,7 +63,7 @@
   
   </tr>
   </table>
-    <form method="post" name ="complain" onsubmit="return  ValidateNIC()" action="process.jsp">
+    <form method="post" name ="complain" onsubmit="return  ValidateNIC()" action="ComplainRegister.jsp">
   <table align="center" border="5" cellspacing="3" cellpadding="3" width="80%">
 	<tr>
 	<td>
@@ -106,7 +106,7 @@
 	</tr>
 	<tr>
 		<td ALIGN="CENTER">
-                    <input type="submit" value="SEND COMPLAIN" onclick="this.disabled=true" SIZE="200">
+                    <input type="submit" value="SEND COMPLAIN" SIZE="200" onclick="complainFieldvalidate()">
 		</td>
 	</tr>
 	
