@@ -106,7 +106,7 @@
 	</tr>
 	<tr>
 		<td ALIGN="CENTER">
-                    <input type="submit" value="SEND COMPLAIN" SIZE="200" onclick="complainFieldvalidate()">
+                    <input type="submit" name ="complainregester" value="SEND COMPLAIN" SIZE="200" onclick="complainFieldvalidate()">
 		</td>
 	</tr>
 	
