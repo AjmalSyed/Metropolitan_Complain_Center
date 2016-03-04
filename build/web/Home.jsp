@@ -68,7 +68,19 @@
 	<tr>
 	<td>
 	<h2>
-	ENTER YOUR CNIC NUMBER:<input type="text" name="nic" SIZE="20">
+            
+            ENTER YOUR CNIC NUMBER:<input type="text" name="nic" SIZE="20" value="<%
+            if(session.getAttribute("nic")==null)
+            {
+              out.print("");
+            }
+            else
+            {
+            out.print(session.getAttribute("nic"));
+            
+            }
+ 
+        %>">
         <input type="submit" name="check" SIZE="20" value="check">
         <%
             if(session.getAttribute("message")==null)
@@ -94,7 +106,7 @@
 	</tr>
 	<tr>
 		<td ALIGN="CENTER">
-		<input type="submit" value="SEND COMPLAIN" SIZE="200">
+                    <input type="submit" value="SEND COMPLAIN" onclick="this.disabled=true" SIZE="200">
 		</td>
 	</tr>
 	

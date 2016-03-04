@@ -116,6 +116,7 @@ return con;
           if(valid==true)
           {
               session.setAttribute("message","Valid Nic Number");
+              session.setAttribute("nic",nicComplain);
               valid=false;
           request.getRequestDispatcher("/Home.jsp").forward(request, response);
           }
