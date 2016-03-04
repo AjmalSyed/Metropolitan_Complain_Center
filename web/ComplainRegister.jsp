@@ -49,7 +49,8 @@ return con;
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <link href="ComplainCss.css" rel="stylesheet">
+        <title>ComplainRegistered</title>
     </head>
      
     <%String name=request.getParameter("name"); %>
@@ -82,6 +83,12 @@ return con;
         }
         %>
     <body>
-        <h1>Hello World!</h1>
+         <h1><MARQUEE behavior="scroll" direction="left" width="100%" scrollamount="20">Metropolitan Complain Center</marquee></h1>
+          
+        <div class="Mainblock">
+            
+           
+            
+        </div>
     </body>
 </html>
