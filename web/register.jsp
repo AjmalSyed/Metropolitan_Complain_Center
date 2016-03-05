@@ -127,7 +127,9 @@
 	<tr>
 	<td>
 	<h2>
-	ENTER YOUR CNIC NUMBER:<input type="text" name="cnic" SIZE="20">
+	ENTER YOUR CNIC NUMBER:<input type="text" id="cnic" SIZE="20">
+        <input type="button" SIZE="20"  onclick="Ajaxvalidate()" value="check"><div class="regText" id='ajaxDiv'>Your result will display here</div>  
+
 	</h2>
 	</td>
 	</tr>

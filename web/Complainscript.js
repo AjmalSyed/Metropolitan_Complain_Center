@@ -8,11 +8,11 @@
              alert("nic must be filled out");
              return  false;
         }
-        else if(nic!="" && complain=="		")
+        else if(complain=="		")
         {
             
-            alert("Now You can Enter Complain");
-            return true;
+            alert("Complain Must Be filled Out");
+            return false;
         }
         else 
         {
@@ -54,5 +54,28 @@
              alert("Complain must be filled out");
              
         }
+            
+        }
+        function ajaxFunction()
+        {
+            var xhttp;
+if (window.XMLHttpRequest) {
+    xhttp = new XMLHttpRequest();
+    } else {
+    // code for IE6, IE5
+    xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+}
+            xhttp.onreadystatechange = function(){
+   
+      if(xhttp.readyState == 4){
+          
+         var ajaxDisplay = document.getElementById('ajaxDiv');
+         ajaxDisplay.innerHTML = xhttp.responseText;
+      }
+   }
+   var nic = document.getElementById('check').value;
+   var queryString = "?check=" + nic ;
+   xhttp.open("GET", "validate.jsp" + queryString, true);
+   xhttp.send(null);
             
         }

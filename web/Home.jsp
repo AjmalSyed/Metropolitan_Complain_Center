@@ -69,7 +69,7 @@
 	<td>
 	<h2>
             
-            ENTER YOUR CNIC NUMBER:<input type="text" name="nic" SIZE="20" value="<%
+            ENTER YOUR CNIC NUMBER:<input type="text" id="check" name="nic" SIZE="20" value="<%
             if(session.getAttribute("nic")==null)
             {
               out.print("");
@@ -81,19 +81,11 @@
             }
  
         %>">
-        <input type="submit" name="check" SIZE="20" value="check">
-        <%
-            if(session.getAttribute("message")==null)
-            {
-              out.print("");
-            }
-            else
-            {
-            out.print(session.getAttribute("message"));
-            session.invalidate(); 
-            }
- 
-        %>
+            <input type="button" onclick='ajaxFunction()' SIZE="20" value="check"><div class="txt" id='ajaxDiv'>Your result will display here</div>  
+           
+              
+            
+           
 	</h2>
 	</td>
 	</tr>
@@ -106,7 +98,7 @@
 	</tr>
 	<tr>
 		<td ALIGN="CENTER">
-                    <input type="submit" name ="complainregester" value="SEND COMPLAIN" SIZE="200" onclick="complainFieldvalidate()">
+                    <input type="submit" name ="complainregester" value="SEND COMPLAIN" SIZE="200">
 		</td>
 	</tr>
 	

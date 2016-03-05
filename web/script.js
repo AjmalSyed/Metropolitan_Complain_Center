@@ -98,4 +98,27 @@ var CENTRAL=['UC 17','UC 18','UC 19','UC 20'];
         }
         
         }
+        function Ajaxvalidate()
+        {
+            var xhttp;
+if (window.XMLHttpRequest) {
+    xhttp = new XMLHttpRequest();
+    } else {
+    // code for IE6, IE5
+    xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+}
+            xhttp.onreadystatechange = function(){
+   
+      if(xhttp.readyState == 4){
+          
+         var ajaxDisplay = document.getElementById('ajaxDiv');
+         ajaxDisplay.innerHTML = xhttp.responseText;
+      }
+   }
+   var nic = document.getElementById('cnic').value;
+   var queryString = "?cnic=" + nic ;
+   xhttp.open("GET", "validateNic.jsp" + queryString, true);
+   xhttp.send(null);
+            
+        }
     

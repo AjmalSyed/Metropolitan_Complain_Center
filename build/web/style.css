@@ -72,6 +72,22 @@ text-shadow:5px 5px 5px green;
 text-decoration:underline;
 font-style:bold;
 }
+.txt{
+    
+                font-size: 30px;
+                margin-top: 416px;
+                position: absolute;
+                margin-left: 670px;
+                top: -20px;
+}
+.regText{
+    
+                font-size: 15px;
+                margin-top: 790px;
+                position: absolute;
+                margin-left: 670px;
+                top: -20px;
+}
 p{
 font-size:2em;
 font-family:Forte;
