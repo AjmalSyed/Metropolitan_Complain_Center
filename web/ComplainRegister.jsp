@@ -73,6 +73,7 @@ return con;
                 voicechairmon=rs.getString("voiceChairmon");
                 chairmon=rs.getString("chairmon");
                 concelour=rs.getString("concelour");
+                complain=Complain;
             }
      }catch (Exception e) {
               
