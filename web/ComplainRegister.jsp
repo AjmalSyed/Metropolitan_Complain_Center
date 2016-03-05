@@ -144,10 +144,19 @@ return con;
     <body>
          <h1><MARQUEE behavior="scroll" direction="left" width="100%" scrollamount="20">Metropolitan Complain Center</marquee></h1>
           <br>
-          <%out.print(nicComplain+complain);%>
+          
         <div class="Mainblock">
             
-           
+            <div>
+                <label class="text">
+                
+                               Congratulation <%out.print(this.name+" Nic #="+nic);%>
+                Your Complain Registered SuccessFully.<br> Your Complain Solve As Soon As Possible Please
+                Keep In touch Thanks,Regard
+                
+            </label>
+                <a href="Home.jsp"><input type="button" value="Back To Home">
+            </div>
             
         </div>
     </body>
