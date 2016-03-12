@@ -151,7 +151,7 @@ return con;
             <div>
                 <label class="text">
                 
-                               Congratulation <%out.print(this.name+" Nic #="+nic);%>
+                Congratulation <%out.print(this.name+" Nic #="+nic);%>
                 Your Complain Registered SuccessFully.<br> Your Complain Solve As Soon As Possible Please
                 Keep In touch Thanks,Regard
                 

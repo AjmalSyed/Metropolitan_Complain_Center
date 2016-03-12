@@ -1,0 +1,161 @@
+
+
+            h1{
+                
+                color: cadetblue;
+                font-size: 50px;
+                text-align: center;
+            }
+            body{
+                
+/*                background-color: azure;
+                //background-image:  url("background.jpg");
+                background-repeat:no-repeat;*/
+            }
+            html { 
+  background: url(background.jpg);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+            .email{
+                position: absolute;
+                top: 210px;
+                left: 515px;
+                font-family: cursive;
+                
+            }
+            .password
+            {
+                position: absolute;
+                top: 275px;
+                left: 510px;
+                 font-family: cursive;
+                
+            }
+            input[type="email"] {
+                height: 30px;
+                width: 250px;
+                position: absolute;
+                top: 13px;
+                left: 100px;
+                border-style: solid;
+                border-radius: 11px;
+                border-color: green;
+            }
+            input[type="password"] {
+                height: 30px;
+                width: 250px;
+                position: absolute;
+                top: 13px;
+                left: 103px;
+                border-style: solid;
+                border-radius: 11px;
+                border-color: green;
+            }
+            .form-container
+            {
+                
+             // background-color: aliceblue;
+    width: 158px;
+    padding: 183px;
+    padding-bottom: 97px;
+    padding-right: 192px;
+    padding-top: 251px;
+    border: groove;
+    border-color: darkcyan;
+    border-radius: 86px;
+    margin-left: 404px;
+    margin-top: 131px;
+    margin-bottom: 96px;
+    clear: both;
+    vertical-align: top;            }
+            .admincode{
+              margin-left: 188px;
+    margin-top: -131px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    position: absolute;
+                
+            }
+            .adminbutton{
+              margin-left: -192px;
+    margin-top: -473px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    position: absolute;
+                
+            }
+            .admintxt{
+              
+    margin-top: -114px;
+    position: absolute;
+    font-size: 20px;
+        font-family: cursive;
+                
+            }
+            
+            input[type="submit"] {
+                height: 43px;
+    width: 100px;
+    position: absolute;
+    top: 353px;
+    left: 745px;
+    font-size: 20px;
+    font-family: cursive;
+    background-color: darkgrey;
+    border-style: solid;
+    border-radius: 16px;
+    border-color: green;
+            }
+            #loginregis{
+                height: 50px;
+                width: 100px;
+                position: absolute;
+                top: 350px;
+                left: 620px;
+                 font-size: 15px;
+                font-family: cursive;
+                background-color: darkgrey;
+                border-style: solid;
+                border-radius: 16px;
+                border-color: green;
+            }
+            #forget{
+                height: 50px;
+                width: 216px;
+                position: absolute;
+                top: 414px;
+                left: 620px;
+                 font-size: 15px;
+                font-family: cursive;
+                background-color: darkgrey;
+                border-style: solid;
+                border-radius: 16px;
+                border-color: green;
+            }
+            .forgetbutton {
+                height: 50px;
+                width: 200px;
+                position: absolute;
+                top: 450px;
+                left: 600px;
+/*                 font-size: 15px;
+                font-family: cursive;*/
+                background-color: darkgrey;
+                border-style: solid;
+                border-radius: 16px;
+                border-color: green;
+            }
+           
+            label{
+                
+                font-size: 40px;
+                margin-top: 300px;
+                clear: both;
+                margin-left: -80px;
+                top: 0;
+               
+            }
+           

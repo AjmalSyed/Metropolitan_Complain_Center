@@ -79,7 +79,7 @@ return con;
     </head>
     <body>
         <%String name=request.getParameter("name"); %>
-        <%String nic=request.getParameter("cnic");%>
+        <%String nic=request.getParameter("nic");%>
         <%String address=request.getParameter("ra"); %>
         <%String email=request.getParameter("email");%>
         <%String uc=request.getParameter("uc"); %>
